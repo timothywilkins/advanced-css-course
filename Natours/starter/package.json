@@ -4,11 +4,16 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
   }
 }

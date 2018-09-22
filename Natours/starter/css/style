@@ -93,7 +93,7 @@ body {
 
 .btn:link,
 .btn:visited {
-  text-transform: uppercase;
+  text-transform: uppdercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -110,7 +110,7 @@ body {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--white {
+.btn-white {
   background-color: #fff;
   color: #777; }
 
