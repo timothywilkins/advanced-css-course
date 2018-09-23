@@ -32,3 +32,19 @@ body {
         animation: moveInRight 1s ease-out;
     }
 }
+
+.heading-secondary {
+    font-size:3.5rem;
+    text-transform:uppercase;
+    font-weight: 700;
+    display:inline-block; // in order to make width match its contents
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text; // applies background gradient only where text is
+    color:transparent; // so you can see background gradient
+    letter-spacing:2px; //or .2 rem
+    transition: all .2s;
+    &:hover {
+        transform:skewY(2deg) skewX(15deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
