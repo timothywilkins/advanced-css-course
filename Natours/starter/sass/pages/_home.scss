@@ -1,5 +1,21 @@
 .section-about {
     background-color: $color-grey-light-1;
-    padding:30rem 0;
+    padding: 30rem 0;
     margin-top: -20vh; //header height (95vh) - header right clip path height (75Vvh)
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom,
+        rgba($color-primary-light, .8),
+        rgba($color-primary-dark, .8)),
+        url(../img/nat-4.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10.5rem;
+
+    & > *{  //select everything that is a direct child, .section-features *
+        transform: skewY(7deg);
+    }
+
 }
